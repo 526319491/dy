@@ -1,0 +1,2 @@
+.rf_page_info{ color: #ff0000; border: 1px solid #ff0000; padding: 5px 10px; position: absolute; display: inline-block; z-index: 10001; left: 50%; top: 0px; font-size: 14px; margin-left: -50px; background: #ffffff}
+#rf_run{ position:absolute; z-index: 10000; left: 0px; top: 0px; right: 0px; bottom: 0px; background: rgba(255,255,255, 0.5); color: #ff0000; font-size: 20px; font-weight: bold; line-height: 150%; text-align: center; padding-top: 100px; margin-top: -45px}

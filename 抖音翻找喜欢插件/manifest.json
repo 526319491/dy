@@ -1,0 +1,42 @@
+{
+  "name": "抖音翻找喜欢扩展",
+  "description": "程序自动在喜欢页向下翻。",
+  "version": "1.0",
+  "manifest_version": 3,
+  "default_locale":"zh_CN",
+  "permissions":[
+    "webRequest",
+    "tabs",
+    "activeTab",
+    "storage",
+    "cookies"
+  ],
+  "icons":
+  {
+    "16":"src/icons/icon-16.png",
+    "19":"src/icons/icon-19.png",
+    "128":"src/icons/icon-128.png"
+  },
+  "action" :
+  {
+    "default_icon":"src/icons/icon-19.png",
+    "default_title":"右击进入目标系统",
+    "default_popup":"popup.html"
+  },
+  "background": {
+    "service_worker":"background.js",
+    "type": "module"
+  },
+  "content_scripts":
+  [
+    {
+      "matches": ["https://www.douyin.com/*"],
+      "css": ["src/public/css/home.css"],
+      "js": ["src/public/js/jquery-3.2.1.min.js", "home.js"],
+      "run_at": "document_end",
+      "all_frames":true
+    }
+  ],
+  "homepage_url":"https://www.douyin.com/*",
+  "host_permissions": ["*://*/*"]
+}

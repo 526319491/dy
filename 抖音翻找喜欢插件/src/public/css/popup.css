@@ -1,0 +1,17 @@
+html{ margin: 0px; padding: 0px}
+body{ font-size: 12px; line-height: 150%; color: #333333}
+
+/*popup*/
+.popup{ padding: 20px; width: 200px; border-radius: 5px;
+	background: -webkit-linear-gradient(#ffffff, #EDF4FC); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(#ffffff, #EDF4FC); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(#ffffff, #EDF4FC); /* Firefox 3.6 - 15 */
+	background: linear-gradient(#ffffff, #EDF4FC); /* 标准的语法（必须放在最后） */
+}
+.popup .logo{ text-align: center}
+.popup .logo img{ width: 50px}
+.popup .name{ font-size: 14px; font-weight: bold; text-align: center}
+.popup .descript{ margin-top: 20px}
+.popup .operation{ margin-top: 20px; text-align: center}
+.popup .operation .button{ background: #ff9900; border: none; display: inline-block; padding: 5px 20px; color: #ffffff; border-radius: 3px; cursor: pointer}
+.popup .operation_msg{ text-align: center; color: #8c8c8c; margin-top: 5px}
